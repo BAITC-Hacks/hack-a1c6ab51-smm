@@ -1,0 +1,22 @@
+# Free demonstration deployment: filesystem data resets on restart/redeploy.
+services:
+  - type: web
+    name: alem-hackalem
+    runtime: node
+    plan: free
+    buildCommand: node --check server.mjs
+    startCommand: node server.mjs
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 24.14.0
+      - key: HOST
+        value: 0.0.0.0
+      - key: AI_PROVIDER
+        value: openai
+      - key: OPENAI_MODEL
+        value: gpt-4.1-mini
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: AI_HOURLY_LIMIT
+        value: 30
