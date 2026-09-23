@@ -1,6 +1,6 @@
 # hack-a1c6ab51-smm
 Hackathon team repository for SMM
-Статус: в разработке. Подготовка к сдаче продолжается»
+Статус: в разработке, будет редактироваться. Подготовка к сдаче продолжается»
 [README.md](https://github.com/user-attachments/files/32556851/README.md)
 # Sana — платформа практики AI Sana
 
